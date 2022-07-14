@@ -1,0 +1,55 @@
+.container {
+    background-color: rgb(47, 47, 47);
+    border-radius: 5px;
+    padding: .1rem .7rem;
+    width: 45%;
+    height: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+.header {
+    margin: auto 0;
+}
+
+.main {
+    transform: translateY(1rem);
+}
+
+.formcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.inputform {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.dateinput {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "Poppins"; 
+}
+
+.taskcontainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.completedtask {
+    text-decoration: line-through;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+}

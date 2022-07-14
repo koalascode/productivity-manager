@@ -1,0 +1,100 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headername {
+    font-family: "Inter";
+    margin-left: 2rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+.flexlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    padding-top: 1rem;
+}
+
+.pagelink {
+    font-family: "Inter";
+    cursor: pointer;
+}
+
+
+.menubtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    margin-right: 4rem;
+    
+}
+
+.menubtnburger {
+    width: 37px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    transition: all 500ms ease;
+
+}
+
+.menubtnburger::before,
+.menubtnburger::after {
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    transition: all 500ms ease; 
+}
+
+.menubtnburger::before {
+    transform: translateY(-12px);
+}
+
+.menubtnburger::after {
+    transform: translateY(12px);
+}
+
+.menubtn[class~='open'] > .menubtnburger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menubtn[class~='open'] > .menubtnburger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menubtn[class~='open'] > .menubtnburger::after {
+    transform: rotate(-45deg) translate(35px, 35px)
+}
+
+.navpop {
+    display: none;
+    text-align: center;
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+    
+}
+
+.bigpagelink {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
